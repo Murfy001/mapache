@@ -3,7 +3,7 @@ package com.mapachebigoton.mapache.mapper;
 import com.mapachebigoton.mapache.dto.CitaResponse;
 import com.mapachebigoton.mapache.model.Cita;
 import com.mapachebigoton.mapache.dto.CitaRequest;
-
+import com.mapachebigoton.mapache.dto.Barberia;
 public class CitaMapper {
     public static CitaResponse toResponse(Cita cita) {
         if (cita == null)
