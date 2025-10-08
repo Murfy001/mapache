@@ -11,4 +11,5 @@ public class CitaResponse {
     String hora;
     Integer idCliente;
     Integer idBarbero;
+    Integer idServicio;
 }

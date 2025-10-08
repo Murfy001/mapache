@@ -40,7 +40,7 @@ public class ServicioServicelmpl implements ServicioService{
     @Override
     public ServicioResponse update(Integer idServicio, ServicioRequest dto) {
         Servicio existing = repository.findById(idServicio)
-                .orElseThrow(() -> new EntityNotFoundException("Student not found: " + idServicio));
+                .orElseThrow(() -> new EntityNotFoundException("Servicio no encontrado: " + idServicio));
         ServicioMapper.copyToEntity(dto, existing);
         Servicio saved = repository.save(existing);
         return ServicioMapper.toResponse(saved);

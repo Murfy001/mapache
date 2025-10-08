@@ -26,7 +26,7 @@ import lombok.RequiredArgsConstructor;
 
 
 @RestController
-@RequestMapping("/cita")
+@RequestMapping("/citas")
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT})
 public class CitaController {

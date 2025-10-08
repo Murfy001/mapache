@@ -14,7 +14,6 @@ import com.mapachebigoton.mapache.dto.BarberoResponse;
 import java.net.URI;
 import java.util.List;
 
-
 @RestController
 @RequestMapping("/barbero")
 @RequiredArgsConstructor
@@ -41,8 +40,8 @@ public class BarberoController {
     }
 
     @PutMapping("/{idBarbero}")
-    public BarberoResponse update(@PathVariable Integer idMedicina, @Valid @RequestBody BarberoRequest req) {
-        return service.update(idMedicina, req);
+    public BarberoResponse update(@PathVariable Integer idBarbero, @Valid @RequestBody BarberoRequest req) {
+        return service.update(idBarbero, req);
     }
 
     @DeleteMapping("/{idBarbero}")

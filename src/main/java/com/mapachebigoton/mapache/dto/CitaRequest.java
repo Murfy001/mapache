@@ -2,24 +2,19 @@ package com.mapachebigoton.mapache.dto;
 
 import java.sql.Date;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data
 public class CitaRequest {
-    @NotBlank
-    @Size(max = 50)
-    String nombre;
-    @NotBlank
+    @NotNull
     Date fecha;
-    @NotBlank
+    @NotNull
     String hora;
-    @NotBlank
+    @NotNull
     Integer idCliente;
-    @NotBlank
+    @NotNull
     Integer idBarbero;
-    @NotBlank
+    @NotNull
     Integer idServicio;
-
 }

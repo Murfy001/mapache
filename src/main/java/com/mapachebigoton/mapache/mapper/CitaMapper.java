@@ -14,6 +14,7 @@ public class CitaMapper {
                 .hora(cita.getHora())
                 .idBarbero(cita.getBarbero() != null ? cita.getBarbero().getIdBarbero() : null)
                 .idCliente(cita.getCliente() != null ? cita.getCliente().getIdCliente() : null)
+                .idServicio(cita.getServicio() != null ? cita.getServicio().getIdServicio() : null)
                 .build();
     }
     

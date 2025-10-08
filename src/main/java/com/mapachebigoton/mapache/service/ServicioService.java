@@ -15,6 +15,4 @@ public interface ServicioService {
 	ServicioResponse update(Integer idServicio, ServicioRequest req);
 
 	void delete(Integer idServicio);
-
-	gera gera gera ger a
 }
